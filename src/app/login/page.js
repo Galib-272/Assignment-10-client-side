@@ -17,22 +17,25 @@ export default function LoginPage() {
 
     setTimeout(() => {
       const mockSessionUser = {
-      name: email.split("@")[0] || "User",
-      avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100",
-      role: role // Triggers User, Vendor, or Admin conditional layout trees
-    };
-    
-    localStorage.setItem("ticketbari_mock_user", JSON.stringify(mockSessionUser));
-    
-    // Trigger absolute full refresh to reload local context components instantly
-    window.location.href = "/dashboard";
-  }, 800);
+        name: email.split("@")[0] || "User",
+        avatar:
+          "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100",
+        role: role, // Triggers User, Vendor, or Admin conditional layout trees
+      };
+
+      localStorage.setItem(
+        "ticketbari_mock_user",
+        JSON.stringify(mockSessionUser),
+      );
+
+      // Trigger absolute full refresh to reload local context components instantly
+      window.location.href = "/dashboard";
+    }, 800);
   };
 
   return (
     <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8 bg-gray-50/50 dark:bg-gray-900/10">
       <div className="sm:mx-auto w-full max-w-md bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 shadow-sm">
-        
         {/* Branding Title Header */}
         <div className="sm:mx-auto sm:w-full sm:max-w-sm mb-6 text-center">
           <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -46,7 +49,9 @@ export default function LoginPage() {
         <form onSubmit={handleLogin} className="space-y-5">
           {/* Email Address Input */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Email Address</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Email Address
+            </label>
             <input
               type="email"
               required
@@ -59,7 +64,9 @@ export default function LoginPage() {
 
           {/* Password Input */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Password</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Password
+            </label>
             <input
               type="password"
               required
@@ -72,7 +79,9 @@ export default function LoginPage() {
 
           {/* Structural Simulation Role Selector */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Simulate Profile Role</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Simulate Profile Role
+            </label>
             <select
               value={role}
               onChange={(e) => setRole(e.target.value)}
@@ -96,11 +105,13 @@ export default function LoginPage() {
 
         <p className="mt-6 text-center text-xs text-gray-500 dark:text-gray-400">
           Not a member yet?{" "}
-          <Link href="/register" className="font-semibold text-emerald-600 hover:text-emerald-500 dark:text-emerald-400">
+          <Link
+            href="/register"
+            className="font-semibold text-emerald-600 hover:text-emerald-500 dark:text-emerald-400"
+          >
             Create an Account
           </Link>
         </p>
-
       </div>
     </div>
   );
