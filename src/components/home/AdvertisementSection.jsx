@@ -8,7 +8,8 @@ export default function AdvertisementSection() {
     {
       _id: "adv_1",
       title: "Green Line Scenic Sleeper (Dhaka - Cox's Bazar)",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=600",
       price: 2500,
       quantity: 12,
       transportType: "Bus",
@@ -17,7 +18,8 @@ export default function AdvertisementSection() {
     {
       _id: "adv_2",
       title: "Subarna Express Premier Chair (Chittagong - Dhaka)",
-      image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&q=80&w=600",
       price: 850,
       quantity: 4,
       transportType: "Train",
@@ -26,7 +28,8 @@ export default function AdvertisementSection() {
     {
       _id: "adv_3",
       title: "US-Bangla Business Class (Dhaka - Sylhet)",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600",
       price: 7500,
       quantity: 2,
       transportType: "Plane",
@@ -35,7 +38,8 @@ export default function AdvertisementSection() {
     {
       _id: "adv_4",
       title: "Manami Luxury Cruise VIP Cabin (Dhaka - Barisal)",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=600",
       price: 4500,
       quantity: 8,
       transportType: "Launch",
@@ -44,7 +48,8 @@ export default function AdvertisementSection() {
     {
       _id: "adv_5",
       title: "Hanif Enterprise Economy (Dhaka - Rajshahi)",
-      image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&q=80&w=600",
       price: 900,
       quantity: 24,
       transportType: "Bus",
@@ -53,7 +58,8 @@ export default function AdvertisementSection() {
     {
       _id: "adv_6",
       title: "Parabat Express Snigdha (Dhaka - Sreemangal)",
-      image: "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?auto=format&fit=crop&q=80&w=600",
       price: 650,
       quantity: 15,
       transportType: "Train",
@@ -71,7 +77,8 @@ export default function AdvertisementSection() {
           Top Sponsored Deals
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-base text-gray-500 dark:text-gray-400">
-          Handpicked premium travel selections curated directly for high availability and comfort.
+          Handpicked premium travel selections curated directly for high
+          availability and comfort.
         </p>
       </div>
 
@@ -100,21 +107,29 @@ export default function AdvertisementSection() {
 
                 <div className="mt-4 flex items-baseline justify-between border-b border-gray-100 pb-4 dark:border-gray-800">
                   <div className="flex flex-col">
-                    <span className="text-xs text-gray-400 uppercase tracking-wider">Per Unit</span>
+                    <span className="text-xs text-gray-400 uppercase tracking-wider">
+                      Per Unit
+                    </span>
                     <span className="text-xl font-extrabold text-emerald-600 dark:text-emerald-400">
                       ৳{ticket.price}
                     </span>
                   </div>
                   <div className="text-right">
-                    <span className="text-xs text-gray-400 uppercase tracking-wider block">Available</span>
-                    <span className={`text-sm font-semibold ${ticket.quantity > 5 ? 'text-gray-600 dark:text-gray-300' : 'text-red-500 font-bold'}`}>
+                    <span className="text-xs text-gray-400 uppercase tracking-wider block">
+                      Available
+                    </span>
+                    <span
+                      className={`text-sm font-semibold ${ticket.quantity > 5 ? "text-gray-600 dark:text-gray-300" : "text-red-500 font-bold"}`}
+                    >
                       {ticket.quantity} Seats Left
                     </span>
                   </div>
                 </div>
 
                 <div className="mt-4 min-h-[3rem]">
-                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-2">Perks Included:</span>
+                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider block mb-2">
+                    Perks Included:
+                  </span>
                   <div className="flex flex-wrap gap-1.5">
                     {ticket.perks.map((perk, index) => (
                       <span
