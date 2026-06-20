@@ -26,7 +26,6 @@ export default function RegisterPage() {
   return (
     <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8 bg-gray-50/50 dark:bg-gray-900/10">
       <div className="sm:mx-auto w-full max-w-md bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 shadow-sm">
-        
         {/* Header Block */}
         <div className="sm:mx-auto sm:w-full sm:max-w-sm mb-6 text-center">
           <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -40,7 +39,9 @@ export default function RegisterPage() {
         <form onSubmit={handleRegister} className="space-y-4">
           {/* Full Name */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Full Name</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Full Name
+            </label>
             <input
               type="text"
               required
@@ -53,7 +54,9 @@ export default function RegisterPage() {
 
           {/* Email Address */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Email Address</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Email Address
+            </label>
             <input
               type="email"
               required
@@ -66,7 +69,9 @@ export default function RegisterPage() {
 
           {/* Password */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Password</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Password
+            </label>
             <input
               type="password"
               required
@@ -79,7 +84,9 @@ export default function RegisterPage() {
 
           {/* System Designation Role Selector Element */}
           <div>
-            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">Account Type Designation</label>
+            <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1.5">
+              Account Type Designation
+            </label>
             <div className="grid grid-cols-2 gap-3 mt-1">
               <button
                 type="button"
@@ -110,11 +117,13 @@ export default function RegisterPage() {
 
         <p className="mt-6 text-center text-xs text-gray-500 dark:text-gray-400">
           Already registered?{" "}
-          <Link href="/login" className="font-semibold text-emerald-600 hover:text-emerald-500 dark:text-emerald-400">
+          <Link
+            href="/login"
+            className="font-semibold text-emerald-600 hover:text-emerald-500 dark:text-emerald-400"
+          >
             Sign In Here
           </Link>
         </p>
-
       </div>
     </div>
   );
