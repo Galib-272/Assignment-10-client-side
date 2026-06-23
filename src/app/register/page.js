@@ -37,7 +37,7 @@ export default function RegisterPage() {
       router.push("/login");
     } catch (err) {
       setError(err.message);
-    } finaly {
+    } finally { // <--- Fixed spelling typo here
       setLoading(false);
     }
   };
