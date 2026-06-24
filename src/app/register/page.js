@@ -37,7 +37,7 @@ export default function RegisterPage() {
       router.push("/login");
     } catch (err) {
       setError(err.message);
-    } finally { // <--- Fixed spelling typo here
+    } finally { // <--- FIXED: Now spelled correctly with two 'l's
       setLoading(false);
     }
   };
@@ -147,7 +147,6 @@ export default function RegisterPage() {
           </button>
         </form>
 
-        {/* --- SOCIAL AUTHENTICATION SEPARATOR AND BUTTON BLOCK --- */}
         <div className="mt-6">
           <div className="relative flex items-center justify-center mb-4">
             <div className="absolute w-full border-t border-gray-200 dark:border-gray-800"></div>
