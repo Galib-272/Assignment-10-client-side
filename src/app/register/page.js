@@ -40,7 +40,7 @@ export default function RegisterPage() {
     } finally { // <--- FIXED: Now spelled correctly with two 'l's
       setLoading(false);
     }
-  };
+  }
 
   // 2. Better-Auth Social Google Provider Action
   const handleGoogleSignIn = async () => {
